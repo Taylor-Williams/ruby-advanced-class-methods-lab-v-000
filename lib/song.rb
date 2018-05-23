@@ -41,6 +41,10 @@ class Song
     @@all.sort_by{|s| s.name}
   end
 
+  def new_from_filename(file)
+    song_info = file.split(/[ - \.mp3])
+  end
+
   def save
     self.class.all << self
   end
