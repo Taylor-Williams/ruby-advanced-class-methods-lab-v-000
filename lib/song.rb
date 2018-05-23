@@ -21,6 +21,10 @@ class Song
     song
   end
 
+  def find_by_name(name)
+    @@all.detect(name)
+  end
+
   def self.all
     @@all
   end
