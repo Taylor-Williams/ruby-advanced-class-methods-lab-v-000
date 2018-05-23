@@ -37,6 +37,10 @@ class Song
     @@all
   end
 
+  def .alphabetical
+    @@all.sort{|s| s.name}
+  end
+
   def save
     self.class.all << self
   end
