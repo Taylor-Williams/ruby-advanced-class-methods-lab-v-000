@@ -43,6 +43,8 @@ class Song
 
   def new_from_filename(file)
     song_info = file.split(/[ - \.mp3])
+    song = Song.new_by_name(song_info[1])
+    song.artist_name = song_info[0]
   end
 
   def save
