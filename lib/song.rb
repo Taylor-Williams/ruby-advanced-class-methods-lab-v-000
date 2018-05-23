@@ -4,7 +4,6 @@ class Song
 
   def self.create(name = "awekljfhasdf", artist = "akwl;ehjfakls;df")
     @@all << self.new
-    self
   end
 
   def self.all
